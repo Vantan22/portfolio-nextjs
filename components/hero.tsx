@@ -82,12 +82,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 h-full w-full bg-black"
       />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+      <div className="relative z-10 flex h-full w-full flex-col items-center justify-center px-4 text-center">
         <motion.h1
           className="mb-6 text-6xl font-bold tracking-tighter sm:text-7xl lg:text-8xl"
           initial={{ opacity: 0, y: 20 }}
@@ -104,21 +104,21 @@ export default function Hero() {
         >
           Web Developer
         </motion.p>
+        <motion.div
+          className=" absolute bottom-10 transform -translate-x-1/2 flex flex-col items-center"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+        >
+          <div className="w-8 h-14 rounded-full border-2 border-white/30 flex justify-center pt-2">
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+              className="w-1 h-3 bg-white rounded-full"
+            />
+          </div>
+          <p className="text-white/50 text-sm mt-2">Scroll to explore</p>
+        </motion.div>
       </div>
-      <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-      >
-        <div className="w-8 h-14 rounded-full border-2 border-white/30 flex justify-center pt-2">
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-            className="w-1 h-3 bg-white rounded-full"
-          />
-        </div>
-        <p className="text-white/50 text-sm mt-2">Scroll to explore</p>
-      </motion.div>
     </div>
   );
 }

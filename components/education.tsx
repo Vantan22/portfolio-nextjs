@@ -8,7 +8,7 @@ const education = [
   {
     school: "Hanoi University of Business and Technology",
     degree: "Engineer of Information Technology, Graduated with Distinction",
-    year: "2014 - 2018",
+    year: "2019 - 2023",
     description:
       "Completed an intensive engineering program in Information Technology with a strong focus on software development, system design, and applied IT solutions. Graduated with distinction.",
     achievements: [],

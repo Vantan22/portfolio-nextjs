@@ -183,7 +183,7 @@ export default function AboutSection() {
               great but also perform flawlessly.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl">
                 <h4 className="font-bold text-white mb-2">Name</h4>
                 <p>Nguyen Van Tan</p>
