@@ -13,58 +13,6 @@ import { ExternalLink, Github } from "lucide-react";
 import { useRef, useState } from "react";
 const projects = [
   {
-    id: 1,
-    year: "2024",
-    title: "May Bom Vu Anh",
-    description:
-      "Warehouse management app for pumps with serial scanning, stock operations, product verification, and warranty activation.",
-    longDescription:
-      "Developed a specialized warehouse management system for the pump industry, featuring advanced serial number scanning, real-time inventory updates, automated reporting, product categorization by specification, and robust product warranty management and activation. The app minimizes manual errors, streamlines warehouse processes, and enhances after-sales service quality.",
-    technologies: ["Javascript", "Go", "Next.js", "SQL", "Tailwind CSS"],
-    siteLink: "https://maybomvuanh.com/he-thong",
-    githubLink: null,
-    achievements: [
-      "Implemented full workflow for importing, exporting, and verifying stock via serial code scanning.",
-      "Integrated product warranty management and activation for end-users.",
-      "Automated inventory reporting and product categorization processes.",
-      "Reduced manual data entry errors, improving operational accuracy and warehouse productivity.",
-    ],
-    features: [
-      "Serial code scanning for stock entry",
-      "Exporting products to distributor agents",
-      "Stock verification and product lookup",
-      "Product warranty activation and management",
-      "Automated inventory reporting",
-      "Product categorization by technical specifications",
-      "User-friendly interface",
-    ],
-  },
-  {
-    id: 7,
-    year: "2024",
-    title: "Huyndai Vinh Yen Website",
-    description:
-      "Website doanh nghiệp Hyundai Vĩnh Yên, cung cấp thông tin showroom, dịch vụ và bảo hành.",
-    longDescription:
-      "Xây dựng giao diện website cho Hyundai Vĩnh Yên, nhấn mạnh hình ảnh showroom, thông tin dịch vụ, bảo dưỡng và các gói bảo hành chính hãng. Giao diện chuyên nghiệp, đúng chuẩn nhận diện thương hiệu Hyundai toàn cầu 3S.",
-    technologies: ["Javascript", "HTML", "CSS"],
-    image: "/projects/hyundai-vinhyen.jpg",
-    siteLink: "https://hyundaivinhyen.com.vn/",
-    githubLink: null,
-    achievements: [
-      "Phát triển website chuẩn branding, tối ưu cho khách hàng doanh nghiệp.",
-      "Đảm bảo đồng nhất hình ảnh thương hiệu và trải nghiệm người dùng.",
-      "Tối ưu website về tốc độ và khả năng truy cập thông tin dễ dàng.",
-    ],
-    features: [
-      "Đồng bộ nhận diện thương hiệu Hyundai",
-      "Giới thiệu chi tiết dịch vụ và gói bảo hành",
-      "Thông tin showroom và đội ngũ",
-      "Form liên hệ & yêu cầu tư vấn",
-      "Giao diện responsive, thân thiện",
-    ],
-  },
-  {
     id: 2,
     year: "2023",
     title: "Sally",
@@ -124,6 +72,58 @@ const projects = [
       "Safe file sharing with access control",
       "Real-time notifications via WebSocket",
       "Enterprise-grade document storage",
+    ],
+  },
+  {
+    id: 1,
+    year: "2024",
+    title: "May Bom Vu Anh",
+    description:
+      "Warehouse management app for pumps with serial scanning, stock operations, product verification, and warranty activation.",
+    longDescription:
+      "Developed a specialized warehouse management system for the pump industry, featuring advanced serial number scanning, real-time inventory updates, automated reporting, product categorization by specification, and robust product warranty management and activation. The app minimizes manual errors, streamlines warehouse processes, and enhances after-sales service quality.",
+    technologies: ["Javascript", "Go", "Next.js", "SQL", "Tailwind CSS"],
+    siteLink: "https://maybomvuanh.com/he-thong/san-pham",
+    githubLink: null,
+    achievements: [
+      "Implemented full workflow for importing, exporting, and verifying stock via serial code scanning.",
+      "Integrated product warranty management and activation for end-users.",
+      "Automated inventory reporting and product categorization processes.",
+      "Reduced manual data entry errors, improving operational accuracy and warehouse productivity.",
+    ],
+    features: [
+      "Serial code scanning for stock entry",
+      "Exporting products to distributor agents",
+      "Stock verification and product lookup",
+      "Product warranty activation and management",
+      "Automated inventory reporting",
+      "Product categorization by technical specifications",
+      "User-friendly interface",
+    ],
+  },
+  {
+    id: 7,
+    year: "2024",
+    title: "Huyndai Vinh Yen Website",
+    description:
+      "Website doanh nghiệp Hyundai Vĩnh Yên, cung cấp thông tin showroom, dịch vụ và bảo hành.",
+    longDescription:
+      "Xây dựng giao diện website cho Hyundai Vĩnh Yên, nhấn mạnh hình ảnh showroom, thông tin dịch vụ, bảo dưỡng và các gói bảo hành chính hãng. Giao diện chuyên nghiệp, đúng chuẩn nhận diện thương hiệu Hyundai toàn cầu 3S.",
+    technologies: ["Javascript", "HTML", "CSS"],
+    image: "/projects/hyundai-vinhyen.jpg",
+    siteLink: "https://hyundaivinhyen.com.vn/",
+    githubLink: null,
+    achievements: [
+      "Phát triển website chuẩn branding, tối ưu cho khách hàng doanh nghiệp.",
+      "Đảm bảo đồng nhất hình ảnh thương hiệu và trải nghiệm người dùng.",
+      "Tối ưu website về tốc độ và khả năng truy cập thông tin dễ dàng.",
+    ],
+    features: [
+      "Đồng bộ nhận diện thương hiệu Hyundai",
+      "Giới thiệu chi tiết dịch vụ và gói bảo hành",
+      "Thông tin showroom và đội ngũ",
+      "Form liên hệ & yêu cầu tư vấn",
+      "Giao diện responsive, thân thiện",
     ],
   },
 ];
@@ -281,78 +281,90 @@ export default function ProjectsSection() {
           onOpenChange={() => setSelectedProject(null)}
         >
           {selectedProject && (
-            <DialogContent className="max-w-3xl bg-gray-900 text-white">
+            <DialogContent className="w-full max-w-4xl bg-gray-900 text-white overflow-y-auto max-h-[90vh] p-4 md:p-8">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold flex items-center justify-between">
+                <DialogTitle className="text-xl md:text-2xl font-bold">
                   {selectedProject.title}
                 </DialogTitle>
               </DialogHeader>
 
-              <div className="mt-4 space-y-6">
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Overview</h4>
-                  <p className="text-gray-300">
-                    {selectedProject.longDescription}
-                  </p>
-                </div>
+              <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Overview</h4>
+                    <p className="text-gray-300 text-sm md:text-base">
+                      {selectedProject.longDescription}
+                    </p>
+                  </div>
 
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Technologies</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedProject.technologies.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="outline"
-                        className="text-purple-200 border-purple-500"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Technologies</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedProject.technologies.map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="outline"
+                          className="text-purple-200 border-purple-500"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Key Features</h4>
-                  <ul className="list-disc list-inside text-gray-300 space-y-1">
-                    {selectedProject.features.map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
-                    ))}
-                  </ul>
-                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg font-semibold mb-2">Key Features</h4>
+                    <ul className="list-disc list-inside text-gray-300 text-sm md:text-base space-y-1">
+                      {selectedProject.features.map((feature, idx) => (
+                        <li key={idx}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <div>
-                  <h4 className="text-lg font-semibold mb-2">Achievements</h4>
-                  <ul className="list-disc list-inside text-gray-300 space-y-1">
-                    {selectedProject.achievements.map((achievement, idx) => (
-                      <li key={idx}>{achievement}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="flex gap-4 pt-4">
-                  {selectedProject.siteLink && (
-                    <Button
-                      variant="secondary"
-                      onClick={() =>
-                        window.open(selectedProject.siteLink, "_blank")
-                      }
-                    >
-                      <ExternalLink size={16} className="mr-2" />
-                      Visit Live Site
-                    </Button>
-                  )}
-                  {selectedProject.githubLink && (
-                    <Button
-                      variant="default"
-                      onClick={() =>
-                        window.open(selectedProject.githubLink || "", "_blank")
-                      }
-                    >
-                      <Github size={16} className="mr-2" />
-                      View Source Code
-                    </Button>
+                  {selectedProject.achievements.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2">
+                        Achievements
+                      </h4>
+                      <ul className="list-disc list-inside text-gray-300 text-sm md:text-base space-y-1">
+                        {selectedProject.achievements.map(
+                          (achievement, idx) => (
+                            <li key={idx}>{achievement}</li>
+                          )
+                        )}
+                      </ul>
+                    </div>
                   )}
                 </div>
+              </div>
+
+              <div className="mt-6 flex flex-col md:flex-row gap-3">
+                {selectedProject.siteLink && (
+                  <Button
+                    variant="secondary"
+                    className="w-full md:w-auto"
+                    onClick={() =>
+                      window.open(selectedProject.siteLink, "_blank")
+                    }
+                  >
+                    <ExternalLink size={16} className="mr-2" />
+                    Visit Live Site
+                  </Button>
+                )}
+                {selectedProject.githubLink && (
+                  <Button
+                    variant="default"
+                    className="w-full md:w-auto"
+                    onClick={() =>
+                      window.open(selectedProject.githubLink || "", "_blank")
+                    }
+                  >
+                    <Github size={16} className="mr-2" />
+                    View Source Code
+                  </Button>
+                )}
               </div>
             </DialogContent>
           )}

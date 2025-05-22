@@ -106,17 +106,26 @@ export default function Hero() {
         </motion.p>
         <motion.div
           className=" absolute bottom-10 transform -translate-x-1/2 flex flex-col items-center"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="w-8 h-14 rounded-full border-2 border-white/30 flex justify-center pt-2">
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-              className="w-1 h-3 bg-white rounded-full"
-            />
-          </div>
-          <p className="text-white/50 text-sm mt-2">Scroll to explore</p>
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            className=" absolute bottom-10  transform -translate-x-1/2 flex flex-col items-center"
+            transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+          >
+            <div className="w-8 h-14 rounded-full border-2 border-white/30 flex justify-center pt-2">
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
+                className="w-1 h-3 bg-white rounded-full"
+              />
+            </div>
+            <p className="text-white/50 block w-max text-sm mt-2">
+              Scroll to explore
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </div>
