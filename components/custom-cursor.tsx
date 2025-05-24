@@ -17,7 +17,7 @@ export default function CustomCursor() {
     // Hide default cursor
     document.documentElement.style.cursor = "none";
     document.body.style.cursor = "none";
-
+    document.documentElement.style.backgroundColor = "black";
     const hideCursor = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       target.style.cursor = "none";

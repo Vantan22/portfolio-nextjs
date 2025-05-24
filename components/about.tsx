@@ -170,17 +170,22 @@ export default function AboutSection() {
             className="text-gray-300"
           >
             <h3 className="text-2xl font-bold mb-6 text-white">
-              Web Developer with a passion for creating beautiful,
-              functional websites
+              Web Developer with a passion for transforming ideas into
+              beautiful, user-friendly websites (and making both users and
+              browsers happy).
             </h3>
 
             <p className="mb-8">
-              With over 2 years of experience in front-end development, I
-              specialize in building responsive, user-friendly websites and
-              applications that deliver exceptional user experiences. My
-              approach combines technical expertise with creative
-              problem-solving to create digital solutions that not only look
-              great but also perform flawlessly.
+              With 2+ years of front-end experience, I specialize in crafting
+              responsive interfaces and digital experiences that run smoother
+              than a fresh cup of coffee. My toolkit centers on React, Next.js,
+              and the modern web stack—I love turning Figma designs into
+              pixel-perfect reality. Creative problem-solving is my favorite
+              sport, and I thrive in Agile teams where every day brings a new
+              “plot twist.” Always learning, always ready to refactor just one
+              more component. And if a project needs a sprinkle of Node.js magic
+              on the backend, I can jump in when needed. Let’s build something
+              awesome (and maybe share a meme or two along the way)!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
