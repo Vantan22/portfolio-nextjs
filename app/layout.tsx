@@ -23,10 +23,34 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  generator: "v0.dev",
   title: "Nguyen Van Tan",
   description: "Nguyen Van Tan's Portfolio",
   keywords: ["Nguyen Van Tan", "Portfolio", "Front-End Developer"],
   author: "Nguyen Van Tan",
   robots: "index, follow",
+  openGraph: {
+    title: "Nguyen Van Tan | Front-End Developer Portfolio",
+    description:
+      "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
+    url: "/CV-photo.jpg",
+    siteName: "Nguyen Van Tan Portfolio",
+    images: [
+      {
+        url: "/CV-photo.jpg", // beautiful avatar or banner (aspect ratio 1.91:1, e.g., 1200x630px)
+        width: 1200,
+        height: 630,
+        alt: "Nguyen Van Tan Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "/CV-photo.jpg",
+    title: "Nguyen Van Tan | Front-End Developer Portfolio",
+    description:
+      "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
+    images: ["/CV-photo.jpg"],
+    site: "@yourtwitter",
+  },
 };
