@@ -14,7 +14,7 @@ export default function ExperienceTimeline() {
       company: "CMC Global",
       period: "12/2022 - 03/2023",
       description:
-        "Led a team of interns to develop a test project from scratch, managed task assignment and code reviews, directly contributed to building key front-end components, and ensured project delivery on schedule while learning and applying modern front-end workflows.",
+        "Lead a team of interns to develop a test project from scratch, managed task assignment and code reviews, directly contributed to building key front-end components, and ensured project delivery on schedule while learning and applying modern front-end workflows.",
       achievements: [
         "Developed 5+ UI features for user management module",
         "Wrote component usage guides for the team",

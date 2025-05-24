@@ -176,16 +176,17 @@ export default function AboutSection() {
             </h3>
 
             <p className="mb-8">
-              With 2+ years of front-end experience, I specialize in crafting
-              responsive interfaces and digital experiences that run smoother
-              than a fresh cup of coffee. My toolkit centers on React, Next.js,
-              and the modern web stack—I love turning Figma designs into
-              pixel-perfect reality. Creative problem-solving is my favorite
-              sport, and I thrive in Agile teams where every day brings a new
-              “plot twist.” Always learning, always ready to refactor just one
-              more component. And if a project needs a sprinkle of Node.js magic
-              on the backend, I can jump in when needed. Let’s build something
-              awesome (and maybe share a meme or two along the way)!
+              I specialize in crafting responsive interfaces and digital
+              experiences that run smoother than a fresh cup of coffee—no
+              caffeine crash included! Armed with React, Next.js, and all the
+              shiny tools of the modern web, I love turning Figma dreams into
+              pixel-perfect reality. Problem-solving is my daily brain gym, and
+              I genuinely enjoy those Agile “plot twists” that keep things
+              interesting. I’m always up for learning new tricks, refactoring
+              that “one last” component, or sprinkling a bit of Node.js magic on
+              the backend when things get spicy. Ready to build something
+              awesome together? Bonus points if your team appreciates the
+              occasional meme or two along the way!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
