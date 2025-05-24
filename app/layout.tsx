@@ -32,11 +32,11 @@ export const metadata = {
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
       "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
-    url: "/CV-photo.jpg",
+    url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
     siteName: "Nguyen Van Tan Portfolio",
     images: [
       {
-        url: "/CV-photo.jpg", // beautiful avatar or banner (aspect ratio 1.91:1, e.g., 1200x630px)
+        url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961", // beautiful avatar or banner (aspect ratio 1.91:1, e.g., 1200x630px)
         width: 1200,
         height: 630,
         alt: "Nguyen Van Tan Portfolio",
@@ -46,11 +46,13 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "/CV-photo.jpg",
+    card: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
       "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
-    images: ["/CV-photo.jpg"],
+    images: [
+      "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
+    ],
     site: "@yourtwitter",
   },
 };
