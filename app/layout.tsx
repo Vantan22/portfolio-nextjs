@@ -23,36 +23,36 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  title: "Nguyen Van Tan",
-  description: "Nguyen Van Tan's Portfolio",
+  title: "Nguyen Van Tan | Front-End Developer Portfolio",
+  description:
+    "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
   keywords: ["Nguyen Van Tan", "Portfolio", "Front-End Developer"],
-  author: "Nguyen Van Tan",
-  robots: "index, follow",
   openGraph: {
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
-      "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
+      "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
     url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
     siteName: "Nguyen Van Tan Portfolio",
     images: [
       {
-        url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961", // beautiful avatar or banner (aspect ratio 1.91:1, e.g., 1200x630px)
+        url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
         width: 1200,
         height: 630,
         alt: "Nguyen Van Tan Portfolio",
       },
     ],
-    locale: "en_US",
+    locale: "vi_VN",
     type: "website",
   },
   twitter: {
-    card: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
+    card: "summary_large_image",
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
-      "View the products, projects, and experience of Nguyen Van Tan - Front-End Developer.",
+      "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
     images: [
       "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
     ],
     site: "@yourtwitter",
   },
+  robots: "index, follow",
 };
