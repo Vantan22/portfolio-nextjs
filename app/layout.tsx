@@ -25,13 +25,13 @@ export default function RootLayout({
 export const metadata = {
   title: "Nguyen Van Tan | Front-End Developer Portfolio",
   description:
-    "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
+    "Explore the projects, products, and experience of Nguyen Van Tan - Front-End Developer.",
   keywords: ["Nguyen Van Tan", "Portfolio", "Front-End Developer"],
   openGraph: {
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
-      "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
-    url: "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
+      "Explore the projects, products, and experience of Nguyen Van Tan - Front-End Developer.",
+    url: "https://vawntan.io.vn/",
     siteName: "Nguyen Van Tan Portfolio",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Nguyen Van Tan | Front-End Developer Portfolio",
     description:
-      "Xem sản phẩm, dự án và kinh nghiệm của Nguyen Van Tan - Front-End Developer.",
+      "Explore the projects, products, and experience of Nguyen Van Tan - Front-End Developer.",
     images: [
       "https://ik.imagekit.io/72qx25spl/CV-photo.jpg?updatedAt=1748093758961",
     ],
